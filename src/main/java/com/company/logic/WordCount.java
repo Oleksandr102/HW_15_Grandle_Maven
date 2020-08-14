@@ -4,11 +4,11 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 public class WordCount {
-    public static int wordsCount(List<String> stringList) {
+    public static int countWords(List<String> stringList) {
         return stringList.size();
     }
 
-    public static Map<String, Integer> wordAppearance(List<String> textSong, int limit) {
+    public static Map<String, Integer> mostUsedWords(List<String> textSong, int limit) {
         Map<String, Integer> wordCount = new HashMap<>();
         Integer count;
         for (String word : textSong) {
